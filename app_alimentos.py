@@ -388,16 +388,13 @@ def menu_interactivo_crud():
 
 # --- Bloque de Ejecución Principal de la Aplicación ---
 if __name__ == "__main__": 
-    # Opcional: Descomenta las siguientes 3 líneas si quieres limpiar la colección
-    # y asegurarte de que solo trabajas con los datos que insertas desde la aplicación
-    # o si quieres empezar con una colección vacía cada vez que ejecutes el script.
+    # si se quiere empezar con una colección vacía cada vez que se ejecute el script.
     # collection = get_collection()
     # if collection is not None:
     #     collection.delete_many({})
     #     print("Colección 'alimentos' limpiada.")
 
-    # IMPORTANTE: Ya cargaste los 99 alimentos con el script de insertMany en MongoDB Shell/Studio 3T.
-    # Por lo tanto, NO NECESITAS volver a insertar la lista grande aquí.
+    # IMPORTANTE: 
     # Si quieres insertar ALIMENTOS ADICIONALES a los 99 ya cargados, puedes usar la función:
     # crear_alimento({
     #     "nombre": "Nuevo Alimento Extra",
